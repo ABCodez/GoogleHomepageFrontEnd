@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+}
+
+a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+ul > a, ul > img{
+    padding: 0 8px;
+}
+
+.headerImg:hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+section{
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+
+}
+
+h1{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:  5.5em;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    height: 35px;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+}
+
+.search-container:hover{
+    box-shadow: 0 0 15px 0 gainsboro;
+    border-radius: 10px;
+}
+
+.search-container > input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.search-container > img{
+    margin-right: 5px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.button-container{
+    padding-top: 52px;
+}
+
+button{
+    background-color: #f8f9fA;
+    border-radius: 5px;
+    border: none;
+    height: 36px;
+    padding: 0 20px;
+    margin: 0 4px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+footer{
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#footer-left{
+    display: flex;
+    justify-self: flex-start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+#footer-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+
+/* Media Quiries technique for tailored sizez */
+/* If screen is less than 630px do  */
+@media(max-width: 630px){
+
+    #footer-nav{
+        flex-direction: column;
+    }
+
+    #footer-left{
+        justify-content: center;
+    }
+
+    #footer-right{
+        justify-content: center;
+    }
+
+    .search-container{
+        width: 95vw;
+    }
+}
+
+/* If screen is less than 522px do  */
+@media(max-height: 522px){
+
+    body{
+        /* controls what happens to content that is too large container */
+        overflow-x: hidden; 
+    }
+
+    section{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        position: relative;
+    }
+
+}
+
+@media(max-height: 570px ) and (max-width: 630px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    section{
+        margin-bottom: 13px;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    
+
+
+}
+
